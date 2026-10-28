@@ -1,0 +1,1 @@
+# Core subpackage for configuration, NLP, DB, embeddings, and vector store

@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Compassionate Justice Design System */
+    --background: 40 20% 97%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    /* Trust Blue - Primary */
+    --primary: 210 65% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 70% 70%;
+    --primary-glow: 210 80% 65%;
+
+    /* Warm Ivory - Secondary */
+    --secondary: 40 25% 95%;
+    --secondary-foreground: 220 15% 20%;
+
+    /* Subtle backgrounds */
+    --muted: 40 20% 94%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Gentle Teal - Accent */
+    --accent: 175 55% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 175 60% 70%;
+
+    /* Trust Green */
+    --success: 145 65% 50%;
+    --success-foreground: 0 0% 100%;
+
+    /* Gentle Warning */
+    --warning: 40 90% 55%;
+    --warning-foreground: 220 15% 20%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 92%;
+    --ring: 210 65% 55%;
+
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210, 65%, 55%), hsl(175, 55%, 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(40, 25%, 98%), hsl(40, 20%, 95%));
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(40, 25%, 97%));
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 20px -5px hsl(220, 15%, 20%, 0.08);
+    --shadow-medium: 0 8px 30px -8px hsl(220, 15%, 20%, 0.12);
+    --shadow-glow: 0 0 40px hsl(210, 80%, 65%, 0.15);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 12%;
+    --foreground: 40 15% 92%;
+
+    --card: 220 20% 15%;
+    --card-foreground: 40 15% 92%;
+
+    --popover: 220 20% 15%;
+    --popover-foreground: 40 15% 92%;
+
+    --primary: 210 65% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 70% 70%;
+    --primary-glow: 210 80% 65%;
+
+    --secondary: 220 18% 18%;
+    --secondary-foreground: 40 15% 92%;
+
+    --muted: 220 18% 20%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 175 55% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 175 60% 70%;
+
+    --success: 145 65% 50%;
+    --warning: 40 90% 55%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 18% 25%;
+    --input: 220 18% 22%;
+    --ring: 210 65% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-lift {
+    @apply transition-smooth;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-1 shadow-medium;
+  }
+}

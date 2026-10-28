@@ -1,0 +1,26 @@
+SAMPLE RENTAL AGREEMENT
+
+This is a test rental agreement document to verify the file upload functionality.
+
+PARTIES:
+- Landlord: John Smith
+- Tenant: Jane Doe
+
+TERMS:
+1. Monthly rent: $1,200
+2. Lease term: 12 months
+3. Security deposit: $1,200
+4. Pet policy: No pets allowed
+5. Late fee: $50 after 5 days
+
+TENANT RIGHTS:
+- Right to quiet enjoyment of the premises
+- Right to request repairs within reasonable time
+- Right to privacy (24-hour notice for entry)
+
+LANDLORD OBLIGATIONS:
+- Maintain property in habitable condition
+- Provide necessary repairs
+- Return security deposit within 30 days
+
+This is a demo document for testing the legal document analysis feature.

@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Home",
+    "askAI": "Ask AI",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "lawgic": "LawGic"
+  },
+  "header": {
+    "askAI": "Ask AI",
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "privacy": "Privacy",
+    "getStarted": "Get Started",
+    "askLegalAI": "Ask Legal AI"
+  },
+  "home": {
+    "title": "AI-Powered Legal Solutions",
+    "subtitle": "Get instant legal insights, document analysis, and expert guidance powered by advanced AI technology.",
+    "cta": "Get Started",
+    "features": {
+      "ai_insights": "AI Legal Insights",
+      "ai_insights_desc": "Get instant answers to your legal questions",
+      "document_analysis": "Document Analysis",
+      "document_analysis_desc": "Upload and analyze legal documents",
+      "expert_guidance": "Expert Guidance",
+      "expert_guidance_desc": "Access professional legal advice"
+    }
+  },
+  "askAI": {
+    "title": "Ask AI Legal Assistant",
+    "modes": {
+      "predict": "Quick Prediction",
+      "analyze": "Deep Analysis",
+      "research": "Legal Research"
+    },
+    "modeDescriptions": {
+      "predict": "Get instant legal insights and predictions",
+      "analyze": "Upload documents for thorough analysis",
+      "research": "Comprehensive legal research and citations"
+    },
+    "placeholder": {
+      "predict": "Type your legal question for a quick analysis...",
+      "analyze": "Describe the document or issue. Optionally attach a file or voice note...",
+      "research": "Provide the legal topic or question you'd like us to research..."
+    },
+    "fileFormats": "Text is optional when you attach supporting files. Supported formats: PDF, DOCX, TXT, WAV, MP3, M4A, OGG.",
+    "textOnlyMode": "This mode accepts text input only and returns a quick analysis from the backend.",
+    "analyzing": "Analyzing your request...",
+    "uploadFile": "Upload File",
+    "recordVoice": "Record Voice",
+    "stopRecording": "Stop Recording",
+    "attachFile": "Attach File",
+    "attachVoice": "Attach Voice",
+    "sendMessage": "Send Message",
+    "uploadSuccess": "Upload successful!",
+    "uploadError": "Upload failed. Please try again.",
+    "networkError": "Network error. Please check your connection.",
+    "processingError": "Processing failed. Please try again.",
+    "recordingStart": "Recording started...",
+    "recordingStop": "Recording stopped.",
+    "recordingError": "Recording failed. Please try again."
+  },
+  "suggestions": {
+    "rental": "What are my rights as a tenant in a rental dispute?",
+    "tenantRights": "Can my landlord evict me without proper notice?",
+    "employment": "What constitutes wrongful termination?",
+    "legalDocument": "Help me understand this contract clause."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "uploadedFiles": "Uploaded Files",
+    "document": "Document",
+    "voice": "Voice",
+    "remove": "Remove"
+  },
+  "language": {
+    "english": "English",
+    "hindi": "हिंदी"
+  },
+  "brand": {
+    "name": "LawGic AI"
+  }
+}

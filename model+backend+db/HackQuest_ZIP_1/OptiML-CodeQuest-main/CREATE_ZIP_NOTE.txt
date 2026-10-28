@@ -1,0 +1,11 @@
+To create the deployment zip manually, select the following items and compress into AI_Legal_Assistant_Clean.zip:
+- backend/
+- docker/
+- data/ (models/ inside)
+- docs/
+- tests/ (if any)
+- docker-compose.yml
+- .env (optional; can be excluded from public repos)
+
+Alternatively, run a zip command in PowerShell:
+Compress-Archive -Path backend, docker, data, docs, tests, docker-compose.yml -DestinationPath AI_Legal_Assistant_Clean.zip -Force

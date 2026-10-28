@@ -1,0 +1,26 @@
+fastapi>=0.114
+uvicorn>=0.31
+aiofiles>=23.2
+pydantic>=2.7
+
+# ORM / DB
+SQLAlchemy>=2.0.35
+asyncpg>=0.29
+pgvector>=0.2.5
+psycopg2-binary>=2.9.10
+
+# ML / Model
+joblib>=1.4
+scikit-learn>=1.5
+
+# File utils
+PyPDF2>=3.0
+python-docx>=1.1
+python-multipart>=0.0.9
+
+# NLP / Embeddings / LLM
+spacy>=3.7.2
+langchain>=0.3.7
+langchain-community>=0.3.7
+langchain-google-genai>=2.0.2
+google-generativeai>=0.8.3

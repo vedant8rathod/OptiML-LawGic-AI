@@ -1,0 +1,29 @@
+services:
+  db:
+    image: pgvector/pgvector:0.8.1-pg17-trixie
+    environment:
+      POSTGRES_USER: lawgic_user
+      POSTGRES_PASSWORD: lawgicpass
+      POSTGRES_DB: lawgic
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lawgic_user -d lawgic"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://lawgic_user:lawgicpass@db/lawgic
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - USE_PGVECTOR=1
+      - AI_LEGAL_USE_REAL=1
+    ports:
+      - "8000:8000"
